@@ -1,0 +1,226 @@
+/* CSS - Estilos */
+/*  
+    * = COnfig Geral
+*/
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF4111;
+    --secondary-color: #2C3E50;
+    --accent-color: #3498DB;
+    --text-color: #2C3E50;
+    --light-gray: #F8F9FA;
+    --border-color: #E9ECEF;
+    --white-color: #FFFFFF;
+    --hover-btn: rgba(255, 255, 255, 0.1);
+    --secao-hero-gradient: linear-gradient(90deg, rgba(131, 58, 180, 1) 7%, rgba(245, 2, 2, 1) 48%, rgba(252, 176, 69, 1) 100%);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-gray);
+    line-height: 1.6;
+    /* Altura de linha - Espaço de linha*/
+
+}
+
+header {
+    background-color: var(--white-color);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    /* Alinhamento Vertical*/
+    justify-content: space-around;
+    /* espaçamento entre os items*/
+
+    /* 
+    Padding
+    1 Valor - Cima e baixo
+    2 valor - Lado esquerdo e direito
+    Display Flex
+    */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    font-size: 22px;
+    /* Tamanho do texto*/
+    color: var(--primary-color);
+    font-weight: bold;
+    /* Negrito*/
+}
+
+.fa-utensils {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.container-busca {
+    width: 100%;
+    /*Largura*/
+    max-width: 500px;
+    /* Largura máxima do container*/
+    margin: 0 32px;
+    /* Centraliza o container*/
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--light-gray);
+    border-radius: 24px;
+
+
+}
+
+.container-busca input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--light-gray);
+    padding: 8px;
+    font-size: 16px;
+}
+
+.fa-magnifying-glass {
+    color: var(--primary-color);
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+
+}
+
+.container-categorias nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 8px 32px;
+
+}
+
+.botao-categorias {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: none;
+    border-radius: 24px;
+    color: var(--white-color);
+    background: none;
+    padding: 12px 24px;
+    cursor: pointer;
+
+}
+
+.botao-categorias:hover {
+    background-color: var(--hover-btn);
+}
+
+.botao-categorias.ativo {
+    background-color: var(--primary-color);
+}
+
+.secao-hero {
+
+    color: var(--white-color);
+    text-align: center;
+    padding: 48px 32px;
+    background: var(--secao-hero-gradient);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 32px;
+}
+
+.produtos {
+    width: 100%;
+    max-width: 1200px;
+    padding: 32px;
+    margin: 0 auto;
+}
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.cartao-produto {
+    background-color: var(--white-color);
+    border-radius: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.cartao-produto:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transform: translateY(-16px);
+
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info-produto {
+    padding: 16px;
+}
+
+.nome-produto {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.descricao-produto {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.preco-produto {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.botao-produto {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.botao-produto:hover {
+    background-color: #3498DB;
+
+}
